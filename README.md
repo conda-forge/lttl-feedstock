@@ -3,7 +3,7 @@ About lttl
 
 Home: https://github.com/axanthos/LTTL
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lttl-feedstock/blob/master/LICENSE.txt)
 
