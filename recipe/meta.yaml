@@ -1,5 +1,5 @@
 {% set name = "LTTL" %}
-{% set version = "2.0.12" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/LTTL-{{ version }}.zip
-  sha256: 3450330cbc78e9dead81f5b8ffefc198f4857c568990c6e7a2118c27c812c3b9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: bdbaca62631e2caae5ed6471930b4819e4ea3e8ccd77c4ed4df7eb40866609c6
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
